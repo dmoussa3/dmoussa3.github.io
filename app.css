@@ -1,0 +1,53 @@
+.centered
+{
+    text-align: center;
+}
+
+#welcome
+{
+    color: rgb(8, 136, 234);
+    background-color: aqua;
+    width: auto;
+    font-family: cursive, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+#user
+{
+    background-color: white;
+    width: auto;
+    font-size: 25px;    
+}
+
+.submit
+{
+    border: 3px blue solid;
+}
+
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+body {
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.submit
+{
+   width: auto;
+   height: auto;
+}
+
+button
+{
+    background-color: blue;
+    color: white;
+    shape-outside: circle();
+    width: auto;
+    height: auto;
+}
