@@ -228,36 +228,100 @@
             <section class="qa section-padding" id="section_3">
                 <div class="container">
                     <div class="row">
+                        <div class="col-lg-8 col-md-8 col-12 ms-auto">
+                            <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
+                                <img src="/static/images/prof.jpeg" class="avatar-image img-fluid" alt="">
+                                <h2 class="text-white ms-4 mb-0">Frequently Asked Questions</h2>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
 
                         <div class="col-lg-10 col-12 mx-auto">
-                            <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
-                                <img src="/static/images/chatbot.avif" class="avatar-image img-fluid" alt="">
-
-                                <h2 class="text-white ms-4 mb-0">Q/A</h2>
-                            </div>
-
-                            <div class="qa-chatbot">
-                                <h3 class="mb-3">Ask about Daniel (local knowledge base)</h3>
-                                <p class="mb-4">
-                                    This Q&A is grounded in a local SQLite database. If the answer isn't in the database yet,
-                                    the assistant will say so (so you can add a new Q&A entry).
-                                </p>
-
-                                <div class="mb-3">
-                                    <div class="input-group mb-3">
-                                        <input type="text" id="qaQuestion" class="form-control" placeholder="Try: What projects has Daniel done? How can I contact Daniel?" aria-label="Question">
-                                        <button class="btn btn-primary" type="button" id="qaAskBtn">Ask</button>
+                            <div class="accordion" id="accordionFAQ">
+                                <!-- Question 1 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Who is Daniel Moussa?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                                        <div class="accordion-body">
+                                            Daniel Moussa is a software engineer and data scientist working to make new technology impactful and accessible to users of all backgrounds and demographics. His background spans web development, data analytics, to even psychology.
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div id="qaStatus" class="mb-2" style="min-height: 1.2rem; font-size: 0.9rem; color: #6c757d;"></div>
-                                
-                                <div id="qaAnswer" class="p-3 mb-3" style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; border: 1px solid rgba(255, 255, 255, 0.1); color: #000000; min-height: 80px; white-space: pre-wrap;"></div>
+                                <!-- Question 2 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            What is Daniel's educational background?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                                        <div class="accordion-body">
+                                            Daniel holds a Bachelor of Science in Computer Science from Rutgers University, along with a minor in Psychology.
+                                        </div>
+                                    </div>
+                                </div>
 
-                                <details class="mb-3">
-                                    <summary style="cursor: pointer; color: #6c757d; font-size: 0.9rem;">Debug trace (route + retrieval hits)</summary>
-                                    <pre id="qaDebug" class="p-3 mt-2" style="background: rgba(0, 0, 0, 0.3); border-radius: 0.5rem; border: 1px solid rgba(255, 255, 255, 0.1); color: #e9ecef; overflow: auto; font-size: 0.85rem;"></pre>
-                                </details>
+                                <!-- Question 3 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            What areas does Daniel focus on?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                                        <div class="accordion-body">
+                                            Core focus areas include Machine Learning & Data Science, Web Development, Data Engineering & Analytics, and User-friendly interactive programming.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Question 4 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            What technologies does Daniel use?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ">
+                                        <div class="accordion-body">
+                                            Daniel utilizes a range of technologies including Python, Pandas, NumPy, Streamlit, Django, HTML/CSS, Java, JavaScript, React, Flask, and SQL in his projects.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Question 5 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            What projects has Daniel worked on?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
+                                        <div class="accordion-body">
+                                            Daniel has worked on a variety of projects including a Reddit Sentiment Analysis tool that analyzes sentiment trends in subreddits with visual representations, a collaborative To-do App for real-time task management with reminders and notifications, and a Data Analysis Explorer for comprehensive data insights.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Question 6 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSix">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            What is Daniel's core mission?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionFAQ">
+                                        <div class="accordion-body">
+                                            Daniel focuses on building platforms that help people get the most out of today's technology, such as through looking at modern day data in new ways, and better build up to the future of technology. With a background in IT consulting, web development, and data science, Daniel aims to bridge the gap between complex technology and user-friendly applications.
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -450,48 +514,6 @@
         <script src="/static/js/jquery.magnific-popup.min.js"></script>
         <script src="/static/js/magnific-popup-options.js"></script>
         <script src="/static/js/custom.js"></script>
-
-        <!-- Q/A Chatbot Script -->
-        <script>
-            const qaQuestionEl = document.getElementById("qaQuestion");
-            const qaAnswerEl = document.getElementById("qaAnswer");
-            const qaStatusEl = document.getElementById("qaStatus");
-            const qaDebugEl = document.getElementById("qaDebug");
-            const qaBtn = document.getElementById("qaAskBtn");
-
-            async function askQuestion() {
-                const question = (qaQuestionEl.value || "").trim();
-                if (!question) return;
-
-                qaBtn.disabled = true;
-                qaStatusEl.textContent = "Thinking...";
-                qaAnswerEl.textContent = "";
-                qaDebugEl.textContent = "";
-
-                try {
-                    const res = await fetch("/api/ask", {
-                        method: "POST",
-                        headers: {"Content-Type": "application/json"},
-                        body: JSON.stringify({question, debug: true})
-                    });
-                    const data = await res.json();
-                    if (!data.ok) throw new Error(data.error || "Unknown error");
-
-                    qaAnswerEl.textContent = data.answer || "";
-                    qaStatusEl.textContent = "Answered from local KB.";
-                    qaDebugEl.textContent = JSON.stringify(data.debug || {}, null, 2);
-                } catch (err) {
-                    qaStatusEl.textContent = "Error: " + err.message;
-                } finally {
-                    qaBtn.disabled = false;
-                }
-            }
-
-            qaBtn.addEventListener("click", askQuestion);
-            qaQuestionEl.addEventListener("keydown", (e) => {
-                if (e.key === "Enter") askQuestion();
-            });
-        </script>
 
     </body>
 </html>
