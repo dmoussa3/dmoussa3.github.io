@@ -329,7 +329,7 @@ strong {
 }
 
 .is-sticky .navbar .custom-btn:hover {
-  background: var(--secondary-color);
+  background: var(--primary-color);
   color: var(--white-color);
 }
 
@@ -680,15 +680,15 @@ strong {
   bottom: 15px;
 }
 
-.qa-thumb:hover .qa-price-wrap {
+.qa-thumb:hover .qa-wrap {
   background: var(--secondary-color);
 }
 
-.qa-thumb:hover .qa-price-overlay {
+.qa-thumb:hover .qa-overlay {
   background: var(--primary-color);
 }
 
-.qa-price-wrap {
+.qa-wrap {
   background: var(--primary-color);
   border-radius: var(--border-radius-medium);
   position: relative;
@@ -697,14 +697,14 @@ strong {
   transition: all ease 0.5s;
 }
 
-.qa-price-text {
+.qa-text {
   color: var(--white-color);
   font-size: var(--copyright-font-size);
   font-weight: var(--font-weight-bold);
 }
 
-.qa-price-overlay {
-  background: var(--secondary-color);
+.qa-overlay {
+  background: var(--primary-color);
   border-bottom-left-radius: 100%;
   position: absolute;
   top: 0;
