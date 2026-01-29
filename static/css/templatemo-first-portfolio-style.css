@@ -278,13 +278,13 @@ strong {
 }
 
 .custom-border-btn {
-  background: var(--primary-color);
+  background: transparent;
   border: 2px solid var(--border-color);
   color: var(--p-color);
 }
 
 .custom-border-btn:hover {
-  background: var(--secondary-color);
+  background: var(--primary-color);
   border-color: var(--secondary-color);
   color: var(--white-color);
 }
@@ -608,12 +608,12 @@ strong {
 -----------------------------------------*/
 
 .clients-item-height {
-	height: 120px;
+	height: 240px;
 }
 
 .clients-image {
   display: block;
-  max-width: 100px;
+  max-width: 150px;
   margin: auto;
   transition: all ease 0.2s;
 }
