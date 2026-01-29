@@ -19,6 +19,7 @@ https://templatemo.com/tm-578-first-portfolio
   --p-color:                      #717275;
   --border-color:                 #e9eaeb;
   --featured-border-color:        #1e33c0;
+  --pushed-color:                 #841d1d;
 
   --body-font-family:             'DM Sans', sans-serif;
 
@@ -272,7 +273,7 @@ strong {
 }
 
 .custom-btn:hover {
-  background: var(--primary-color);
+  background: var(--pushed-color);
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
   color: var(--white-color);
 }
@@ -290,7 +291,7 @@ strong {
 }
 
 .custom-link {
-	background-color: var(--primary-color);
+	background-color: var(--pushed-color);
 }
 
 .custom-link:hover {
