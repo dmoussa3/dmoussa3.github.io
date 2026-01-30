@@ -616,6 +616,7 @@ strong {
   max-width: 150px;
   margin: auto;
   transition: all ease 0.2s;
+  align-items: center;
 }
 
 .clients-image:hover {
